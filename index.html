@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Free Crash Radar</title>
+    <meta name="description" content="Crash Radar is a free Aviator-style crash signal demo with a tap-to-scan animation and entertainment-only crash point results. No real prediction guarantee.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#060812">
+    <link rel="canonical" href="https://crashradar.vercel.app/">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://crashradar.vercel.app/">
+    <meta property="og:title" content="Free Crash Radar">
+    <meta property="og:description" content="Tap the center scanner, watch the flight animation, and reveal an entertainment-only crash point result.">
+    <meta property="og:image" content="https://crashradar.vercel.app/og-image.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Crash Radar">
+    <meta name="twitter:description" content="Free crash radar demo with tap-to-scan animation and entertainment-only crash point results.">
+    <meta name="twitter:image" content="https://crashradar.vercel.app/og-image.svg">
+    <link rel="stylesheet" href="/styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Crash Radar",
+        "url": "https://crashradar.vercel.app/",
+        "applicationCategory": "EntertainmentApplication",
+        "operatingSystem": "Any",
+        "description": "Free Aviator-style crash signal demo with tap-to-scan animation and entertainment-only crash point results.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "Tap-to-scan crash radar animation",
+          "Aviator-style flight curve",
+          "Entertainment-only crash point result",
+          "Recent demo signal history"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does Crash Radar predict Aviator results?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Crash Radar is an entertainment-only demo. It does not predict, hack, or guarantee any Aviator or crash game result."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens when I tap the scanner?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The site runs a visual scan animation, shows an Aviator-style flight curve, and reveals a simulated crash point for entertainment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Crash Radar free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Crash Radar is designed as a free browser-based entertainment page."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="/" aria-label="Crash Radar home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Crash Radar</span>
+        </a>
+        <div class="nav-links">
+          <a href="#scanner">Scanner</a>
+          <a href="#history">History</a>
+          <a href="#faq">FAQ</a>
+          <a href="/disclaimer.html">Disclaimer</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="scanner-hero" id="scanner" aria-labelledby="hero-title">
+        <div class="hero-copy compact-copy">
+          <p class="eyebrow">Free crash radar</p>
+          <h1 id="hero-title">Crash Radar</h1>
+          <p class="hero-lede">
+            Start the radar scan and watch a fast crash-style signal appear with a clean multiplier reveal.
+          </p>
+        </div>
+
+        <div class="phone-shell" aria-label="Crash radar scanner">
+          <div class="game-screen">
+            <div class="screen-topline">
+              <span class="live-dot" aria-hidden="true"></span>
+              <span id="scanState">Ready to scan</span><span class="sound-pill" id="soundState">Sound ready</span>
+            </div>
+            <div class="multiplier-display" id="multiplierDisplay">1.00x</div>
+            <canvas id="flightCanvas" width="760" height="440" aria-label="Aviator style flight animation"></canvas>
+            <button class="tap-scanner" id="scanButton" type="button" aria-label="Tap to scan crash point">
+              <span class="tap-rings" aria-hidden="true"></span>
+              <strong>Tap</strong>
+              <small>Scan next signal</small>
+            </button>
+            <div class="result-card" id="resultCard" aria-live="polite">
+              <span>Demo crash point</span>
+              <strong id="resultValue">--</strong>
+              <small id="resultText">Tap the scanner to reveal a free entertainment signal.</small>
+            </div>
+          </div>
+          <p class="trust-line">
+            Entertainment only. This site does not predict real Aviator or crash game outcomes.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <a class="secondary-action" href="#history">See recent demo signals</a>
+          <a class="secondary-action" href="/disclaimer.html">Read disclaimer</a>
+        </div>
+      </section>
+
+      <section class="content-band" aria-labelledby="about-title">
+        <div class="content-grid">
+          <div>
+            <p class="eyebrow">What this site does</p>
+            <h2 id="about-title">Free Crash Signal Entertainment</h2>
+          </div>
+          <div class="copy-stack">
+            <p>
+              Crash Radar gives visitors the same kind of tap-and-reveal experience people expect from crash radar pages, but without charging money for fake certainty.
+            </p>
+            <p>
+              The crash point shown after each scan is a simulated entertainment signal. It is not connected to Aviator, Spribe, casinos, bookmakers, or any live crash game server.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel-section" id="history" aria-labelledby="history-title">
+        <div class="section-heading">
+          <p class="eyebrow">Recent signals</p>
+          <h2 id="history-title">Demo Crash History</h2>
+          <p>Recent generated crash points from the scanner appear here so the page feels active and useful without pretending to know the next real round.</p>
+        </div>
+        <div class="signal-board">
+          <div class="history-chips" id="historyChips" aria-label="Recent demo crash points"></div>
+          <article class="metric-card">
+            <span>Last demo point</span>
+            <strong id="lastSignal">--</strong>
+          </article>
+          <article class="metric-card">
+            <span>Average demo point</span>
+            <strong id="averageSignal">--</strong>
+          </article>
+          <article class="metric-card">
+            <span>Highest demo point</span>
+            <strong id="highestSignal">--</strong>
+          </article>
+        </div>
+      </section>
+
+
+      <section class="panel-section faq-section" id="faq" aria-labelledby="faq-title">
+        <div class="section-heading">
+          <p class="eyebrow">Questions</p>
+          <h2 id="faq-title">Crash Radar FAQ</h2>
+        </div>
+        <div class="faq-grid">
+          <details open>
+            <summary>Is this a real Aviator predictor?</summary>
+            <p>No. It is a free entertainment scanner. It does not predict, hack, or guarantee Aviator or crash game results.</p>
+          </details>
+          <details>
+            <summary>Why does it show 1.45x, 2x, or 3x?</summary>
+            <p>The site generates a demo crash point after the tap animation. The number is for entertainment and interface experience only.</p>
+          </details>
+          <details>
+            <summary>Can this connect to a real game?</summary>
+            <p>No. The public site should stay independent and should not claim access to private casino or game-server results.</p>
+          </details>
+          <details>
+            <summary>Why make it free?</summary>
+            <p>Users should not have to pay for fake certainty. This version gives the visual experience for free and uses ordinary ad placements.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <a class="brand footer-brand" href="/">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span>Crash Radar</span>
+          </a>
+          <p>Free Aviator-style crash signal demo for entertainment.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms</a>
+          <a href="/disclaimer.html">Disclaimer</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>

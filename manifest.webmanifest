@@ -1,0 +1,16 @@
+{
+  "name": "Crash Radar",
+  "short_name": "Crash Radar",
+  "description": "Free Aviator-style crash signal demo with tap-to-scan animation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060812",
+  "theme_color": "#060812",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

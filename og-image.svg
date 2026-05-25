@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Crash Radar preview">
+  <rect width="1200" height="630" fill="#060812"/>
+  <path d="M96 500 C280 492 425 420 545 315 S756 126 1052 112" fill="none" stroke="#ff354f" stroke-width="12" stroke-linecap="round"/>
+  <path d="M96 500 C280 492 425 420 545 315 S756 126 1052 112 L1052 536 L96 536 Z" fill="#ff354f" opacity=".08"/>
+  <g transform="translate(850 190) rotate(-32)">
+    <path d="M88 0 -42 -32 -16 0 -42 32 Z" fill="#f5f8ff"/>
+    <rect x="-66" y="-7" width="48" height="14" fill="#ff354f"/>
+  </g>
+  <circle cx="850" cy="190" r="86" fill="none" stroke="#4db4ff" stroke-opacity=".25" stroke-width="4"/>
+  <circle cx="850" cy="190" r="132" fill="none" stroke="#4db4ff" stroke-opacity=".12" stroke-width="3"/>
+  <text x="90" y="170" fill="#4db4ff" font-family="Arial, sans-serif" font-size="34" font-weight="700">FREE AVIATOR STYLE SIGNAL DEMO</text>
+  <text x="90" y="270" fill="#f5f8ff" font-family="Arial, sans-serif" font-size="94" font-weight="900">Crash Radar</text>
+  <text x="94" y="340" fill="#aab5d0" font-family="Arial, sans-serif" font-size="34">Tap. Watch the flight. Reveal a demo crash point.</text>
+  <text x="94" y="420" fill="#ff354f" font-family="Arial, sans-serif" font-size="64" font-weight="900">2.00x</text>
+</svg>
