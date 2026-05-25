@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://crashradar.vercel.app/sitemap.xml
+Sitemap: https://crashradar.vercel.app/sitemap.txt

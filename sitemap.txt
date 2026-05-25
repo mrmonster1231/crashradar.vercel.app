@@ -1,0 +1,5 @@
+https://crashradar.vercel.app/
+https://crashradar.vercel.app/disclaimer.html
+https://crashradar.vercel.app/privacy.html
+https://crashradar.vercel.app/terms.html
+https://crashradar.vercel.app/contact.html
